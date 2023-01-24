@@ -5,6 +5,8 @@
 
 Useful for analytics and debugging.
 
+**This is a fork of `os-name` that supports commonjs.
+
 ## Install
 
 ```sh

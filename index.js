@@ -1,8 +1,8 @@
-import os from 'node:os';
-import macosRelease from 'macos-release';
-import windowsRelease from 'windows-release';
+const os = require('node:os');
+const macosRelease = require('macos-release');
+const windowsRelease = require('windows-release');
 
-export default function osName(platform, release) {
+module.exports = function osName(platform, release) {
 	if (!platform && release) {
 		throw new Error('You can\'t specify a `release` without specifying `platform`');
 	}
